@@ -1,18 +1,110 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
+
+
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+.search{
+  background-color: #4E75FF;
+  color: #FFFFFF;
+  font-size: 16px;
+  height: 40px;
+  width: 91px;
+  border-color: #4E75FF;
+  border-radius: 8px; 
+}
+
+
+.search-text{
+  width: 272px;
+  height: 40px;
+}
+
+.info {
+  flex: 1;
+  text-align: center;
+}
+
+.words{
+  color: #2E2F42;
+  line-height: 16px;
+}
+
+.numbers{
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.underpicture{
+  width: 360px;
+  display: flex;
+    height: 48px;
+}
+
+.gallery-item {
+  width: 360px;
+  height: 200px;
+  border: 1px solid #808080;
+}
+.gallery-item img {
+  width: 360px;
+    height: 152px;
+   object-fit: cover;
+  display: block;
+}
+
+.words,
+.numbers {
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin: auto;
+}
+
+.css_form{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ddd;
+  border-top-color: #4e75ff;
+  border-radius: 50%;
+  margin: 24px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load{
+  background-color: #4E75FF;
+  color: #FFFFFF;
+  font-size: 16px;
+  height: 40px;
+  width: 91px;
+  border-color: #4E75FF;
+  border-radius: 8px; 
+  display: block;
+  margin: 50px auto 0;
+}
+
+.hide{
+  display: none;
+}
