@@ -54,11 +54,9 @@ form.addEventListener('submit', async e => {
       return;
     }
 
-    createGallery(data.hits);
-
-    if (page < totalPages) {
-      showLoadMoreButton();
-    }
+   createGallery(data.hits);
+   updateBtn();
+   
   } catch (error) {
     iziToast.error({
       title: 'Error',
